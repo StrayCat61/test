@@ -4,11 +4,20 @@
 <title>headline</title>
 <style>
     .headline_top {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 36px;
         border: 0px;
         background-color: rgba(38, 70, 238, 0.1);
+    }
+
+    .headline_all {
+        position: relative;
+        width: 100%;
+        height: 136px;
+        left: calc(50% - 1920px/2);
+        top: 0px;
+        filter: drop-shadow(0px 4px 25px rgba(58, 74, 158, 0.25));
     }
 
     .language_switcher {
@@ -50,15 +59,280 @@
         font-size: 12px;
         font-family: Ubuntu;
     }
+
+    .logo {
+        position: absolute;
+        left: 13.54%;
+        right: 72.19%;
+        top: 36.76%;
+        bottom: 10.29%;
+    }
+
+    .header_button_cat {
+        position: absolute;
+        left: 30%;
+        right: 63.12%;
+        top: 47.06%;
+        bottom: 19.12%;
+        background: rgba(38, 70, 238, 0.1);
+        width: 132px;
+        min-width: 132px;
+        height: 46px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #14299A;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+    }
+
+    .header_button_brands {
+        position: absolute;
+        left: 36.88%;
+        right: 56.3%;
+        top: 47.06%;
+        bottom: 19.12%;
+        background: rgba(38, 70, 238, 0.1);
+        width: 132px;
+        min-width: 132px;
+        height: 46px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #14299A;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-color: rgba(38, 70, 238, 0.3);
+    }
+
+    .header_button_services {
+        position: absolute;
+        width: 122px;
+        min-width: 122px;
+        height: 46px;
+        right: 49.95%;
+        top: 47.06%;
+        background: rgba(38, 70, 238, 0.1);
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #14299A;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-color: rgba(38, 70, 238, 0.3);
+    }
+
+    .header_button_cat:hover {
+        background-color: rgba(38, 70, 238, 0.5);
+    }
+
+    .header_button_brands:hover {
+        background-color: rgba(38, 70, 238, 0.5);
+    }
+
+    .header_button_services:hover {
+        background-color: rgba(38, 70, 238, 0.5);
+    }
+
+    .search_block {
+        position: absolute;
+        width: 400px;
+        min-width: 150px;
+        height: 46px;
+        left: calc(50% - 400px/2 + 221px);
+        top: 64px;
+        border: 1px solid rgba(51, 66, 145, 0.2);
+        border-radius: 2px;
+    }
+
+    .search_field {
+        position: absolute;
+        box-sizing: border-box;
+        width: 354px;
+        min-width: 100px;
+        height: 46px;
+        margin: 0 auto;
+        background: #FFF;
+        border: 0px;
+        outline: 0px;
+    }
+
+    .search_icon {
+        width: 46px;
+        height: 46px;
+        left: 7px;
+        top: calc(50% - 30px/2);
+        border: 0px;
+        outline: 0px;
+        background: #FFF;
+    }
+
+    .submit_button_block {
+        position: absolute;
+        width: 195px;
+        height: 46px;
+        right: 265px;
+        /*left: 1460px;*/
+        top: 64px;
+    }
+
+    .submit_button {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        background: #14299A;
+        box-shadow: 4px 4px 0px rgba(50, 65, 144, 0.24);
+        border-radius: 4px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .dropdown_cat {
+        position: absolute;
+        left: 30%;
+        right: 63.12%;
+        top: 47.06%;
+        bottom: 19.12%;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(220, 224, 245);
+        max-width: 132px;
+        min-width: 132px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #14299A;
+        padding: 8px 12px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(38, 70, 238, 0.5)
+    }
+
+    .dropdown_cat:hover .dropdown-content {
+        display: block;
+    }
+
+    .header_button_cat:hover,
+    .dropdown_cat:hover .header_button_cat {
+        background-color: #0b7dda;
+    }
+
+    .dropdown_brands {
+        position: absolute;
+        left: 36.88%;
+        right: 56.3%;
+        top: 47.06%;
+        bottom: 19.12%;
+        display: inline-block;
+    }
+
+    .dropdown_brands:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown_brands:hover .header_button_brands {
+        background-color: #0b7dda;
+    }
+
+    .dropdown_services {
+        position: absolute;
+        width: 122px;
+        height: 46px;
+        right: 49.95%;
+        top: 47.06%;
+        display: inline-block;
+    }
+
+    .dropdown_services:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown_services:hover .header_button_services {
+        background-color: #0b7dda;
+    }
 </style>
 
 <head>
-    <div class="headline_top">
-        <div class="language_switcher"><a href="#">RU | <span style=color:rgba(38,70,238,0.3);>EN</span></a></div>
-        <div class="sitemap"><a href=#>Главная</a> <a href=#>Оплата и доставка</a> <a href=#>Новости</a> <a href=#>О
-                компании</a> <a href=#>Контакты</a></div>
-        <div class="contacts"><a href="#">+7 (343) 288-35-40</a> <span class="text">пн — пт: c 09:00 до 18:00
-                (GMT+5)</span></div>
+    <div class="headline_all">
+        <div class="headline_top">
+            <div class="language_switcher"><a href="#">RU | <span style=color:rgba(38,70,238,0.3);>EN</span></a></div>
+            <div class="sitemap"><a href=#>Главная</a> <a href=#>Оплата и доставка</a> <a href=#>Новости</a> <a href=#>О
+                    компании</a> <a href=#>Контакты</a></div>
+            <div class="contacts"><a href="#">+7 (343) 288-35-40</a> <span class="text">пн — пт: c 09:00 до 18:00
+                    (GMT+5)</span></div>
+        </div>
+        <div class="logo"><img src="logo.png"></div>
+        <button class="header_button_cat" @click="#">Каталог ˅</button>
+        <div class="dropdown_cat">
+            <div class="dropdown-content">
+                <a href="#">Промышленные подшипники</a>
+                <a href="#">Системы линейного перемещения</a>
+                <a href="#">Материалы</a>
+                <a href="#">Смазывание промышленных подшипников</a>
+                <a href="#">Инструменты для работы с промышленными подшипниками</a>
+                <a href="#">Детали скольжения</a>
+                <a href="#">Уплотнения</a>
+            </div>
+        </div>
+        <button class="header_button_brands" @click="#">Бренды ˅</button>
+        <div class="dropdown_brands">
+            <div class="dropdown-content">
+                <a href="#">Copper</a>
+                <a href="#">Gamet</a>
+                <a href="#">IMO</a>
+                <a href="#">INKULEN</a>
+                <a href="#">INKUMER</a>
+                <a href="#">Kaydon</a>
+                <a href="#">NTN-SNR</a>
+                <a href="#">Rollon</a>
+                <a href="#">Trelleborg</a>
+                <a href="#">Zedex</a>
+            </div>
+        </div>
+        <button class="header_button_services" @click="#">Услуги ˅</button>
+        <div class="dropdown_services">
+            <div class="dropdown-content">
+                <a href="#">Футеровка</a>
+                <a href="#">Изготовление деталей</a>
+            </div>
+        </div>
+        <div class="search_block">
+            <button class="search_icon" type="submit" @click="#"><img src="search_button.png"></button>
+            <input class="search_field" name="cat_search" type="search" placeholder="Поиск по каталогу">
+        </div>
+        <div class="submit_button_block"><button class="submit_button">Отправить заявку</button></div>
     </div>
 </head>
 
